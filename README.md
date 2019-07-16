@@ -2,13 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
+## Json REST API for testing
+
+Run  `json-server --watch db.json` . Navigate to `http://localhost:3000/`. The REST API server with data is visible there
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+
+##navigation to the component with the data
+
+Go to `http://localhost:4200/products` and click on the GET PRODUCTS button
+Check the console in the browser to see the JSON file being fetched
+The data should also print as a list below the button
+
+
+##______________________________________________________________________________________________________________________________________________________
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
 
 ## Build
 

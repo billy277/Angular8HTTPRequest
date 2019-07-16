@@ -1,0 +1,9 @@
+<button (click) = "get_products()"> GET PRODUCTS </button>
+<ul>
+    <li *ngFor="let product of products" >
+      -- id: {{product.id}}
+      -- name: {{product.name}}
+      -- cost: {{product.cost}}
+      -- quantity: {{product.quantity}}
+    </li>
+  </ul> 
