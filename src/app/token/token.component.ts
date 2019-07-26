@@ -12,7 +12,7 @@ export class TokenComponent implements OnInit {
   
   get_products(){
     
-    return this.http.get('http://192.168.137.1:8080/HelloWorld').subscribe((res)=>{
+    return this.http.get('http://localhost:8080/HelloWorld').subscribe((res)=>{
       console.log(res);
       this.products = res;
     });
