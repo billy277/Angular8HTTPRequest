@@ -8,11 +8,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TokenComponent implements OnInit {
   products;
-  constructor(private httpClient: HttpClient){}
+  constructor(private http: HttpClient){}
   
   get_products(){
     
-    this.httpClient.get('http://localhost:3000/products').subscribe((res)=>{
+    return this.http.get('http://192.168.137.1:8080/HelloWorld').subscribe((res)=>{
       console.log(res);
       this.products = res;
     });
